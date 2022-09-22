@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:todo_cubit/cubits/active_todo_count/active_todo_count_cubit.dart';
 import 'create_todo.dart';
 import 'search_and_filter_todo.dart';
+import 'show_todo.dart';
 import 'todo_header.dart';
 
 class TodosPage extends StatelessWidget {
@@ -23,7 +24,8 @@ class TodosPage extends StatelessWidget {
                 TodoHeader(),
                 CreateTodo(),
                 SizedBox(height: 20.0),
-                SearchAndFilterTodo()
+                SearchAndFilterTodo(),
+                ShowTodos(),
               ],
             ),
           ),
