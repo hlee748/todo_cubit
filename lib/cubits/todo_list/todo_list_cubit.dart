@@ -28,6 +28,7 @@ class TodoListCubit extends Cubit<TodoListState> {
     }).toList();
 
     emit(state.copyWith(todos: newTodos));
+    print(state);
   }
 
   void toggleTodo(String id){
