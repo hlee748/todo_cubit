@@ -2,6 +2,7 @@ import 'package:equatable/equatable.dart';
 import 'package:uuid/uuid.dart';
 
 
+//todo 상태들
 enum Filter {
   all,
   active,
@@ -10,6 +11,7 @@ enum Filter {
 
 Uuid uuid = Uuid();
 
+//Todo에 관한 설정. 각 todo들이 어떻게 저장이 될지
 class Todo extends Equatable {
   final String id;
   final String desc;

@@ -11,6 +11,8 @@ class TodoSearchState {
     return TodoSearchState(searchTerm: "");
   }
 
+  //모든 state를 바꾸는데 일관성을 지키는 것, 예측이 가능 한 코드
+  //타입의 충돌을 막을 수 있다
   @override
   List<Object> get props => [searchTerm];
 

@@ -18,7 +18,7 @@ class ActiveTodoCountCubit extends Cubit<ActiveTodoCountState> {
     required this.todoListCubit,
   }) : super(ActiveTodoCountState(activeTodoCount: initialActiveTodoCount)) {
     todoListSubscription =
-        todoListCubit.stream.listen((TodoListState todoListState) {
+        todoListCubit.stream.listen((TodoListState todoListState) { //등록시점 이후 값을 읽음
       print('todoListState: $todoListState');
 
       final int currentActiveTodoCount = todoListState.todos

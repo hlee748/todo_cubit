@@ -12,7 +12,7 @@ class TodoListState extends Equatable {
       Todo(id: '1', desc: 'Clean the room'),
       Todo(id: '2', desc: 'Wash the dish'),
       Todo(id: '3', desc: 'Do homework'),
-    ]);
+    ]); //처음에는 초기값이 셋다 default 로 false로 설정됨
   }
 
     @override

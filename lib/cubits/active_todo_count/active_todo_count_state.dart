@@ -1,5 +1,6 @@
 part of 'active_todo_count_cubit.dart';
 
+//완결이 되지않은 숫자 컨트롤
 class ActiveTodoCountState extends Equatable{
   final int activeTodoCount;
   ActiveTodoCountState({

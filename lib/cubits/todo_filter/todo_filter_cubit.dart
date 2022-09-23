@@ -9,5 +9,5 @@ class TodoFilterCubit extends Cubit<TodoFilterState> {
 
   void changeFilter(Filter newFilter){
     emit(state.copyWith(filter: newFilter));
-  }
+  }//ui에서 filter탭을 탭 할 때마다 todo state가 바뀌는 것
 }
